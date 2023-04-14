@@ -1,0 +1,30 @@
+{
+    "name": "projects",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "ts-node-dev -r tsconfig-paths/register src/index.ts"
+    },
+    "_moduleAliases": {
+        "@": "./src"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.3.4",
+        "express": "^4.18.2",
+        "express-validator": "^6.15.0",
+        "joi": "^17.9.1",
+        "typescript-express-openapi": "github:welltime/typescript-express-openapi#069a2ddf2da45b03dd9bb6b1b285797ed44ea742",
+        "module-alias": "^2.2.2"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/module-alias": "^2.0.1",
+        "ts-node-dev": "^2.0.0",
+        "tsconfig-paths": "^4.1.2",
+        "typescript": "^5.0.2"
+    }
+}

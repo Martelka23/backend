@@ -1,0 +1,30 @@
+{
+    "ts-node": {
+        // Do not forget to `npm i -D tsconfig-paths`
+        "require": ["tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "CommonJS",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outDir": "./dist/",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "target": "es2016",
+        "allowSyntheticDefaultImports": true
+    },
+    "esModuleInterop": true,
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

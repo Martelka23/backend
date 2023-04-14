@@ -1,0 +1,5 @@
+class JsonPlaceholderExternalApi {
+    async getPosts() {
+        
+    }
+}
