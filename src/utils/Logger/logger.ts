@@ -1,7 +1,13 @@
-import { Log } from "typescript-express-openapi";
+interface Topic {
 
-function logMessage(topic: Log.Topic, severity: Log.Severity, message: string) {
-    // Log.logMessage(topic, severity, message);
+}
+
+interface Severity {
+
+}
+
+function logMessage(topic: Topic, severity: Severity, message: string) {
+    // logMessage(topic, severity, message);
     console.log(topic, severity, message);
 }
 
@@ -22,11 +28,11 @@ interface LogErrorControllerMessage {
 }
 
 function logSuccess(logData: LogSuccessControllerMessage) {
-    logMessage(Log.Topic.Integration, Log.Severity.Informational, JSON.stringify({ ...logData, ok: true }));
+    // logMessage(Topic.Integration, Severity.Informational, JSON.stringify({ ...logData, ok: true }));
 }
 
 function logError(logData: LogErrorControllerMessage) {
-    logMessage(Log.Topic.Integration, Log.Severity.Error, JSON.stringify({ ...logData, ok: false }));
+    // logMessage(Topic.Integration, Severity.Error, JSON.stringify({ ...logData, ok: false }));
 }
 
 export {
